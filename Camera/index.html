@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+<body>
+  <div class="video-container"> 
+       <video autoplay style="transform: scale(1);" > </video>
+    </div>
+    <!-- <audio autoplay ></audio> -->
+    <button id="record"> <div></div> </button>
+    <button id="capture"><div></div></button>
+
+    <div class="container-filter">
+         <div class="filter" style="background-color:#6adce42c ;"></div>
+         <div class="filter" style="background-color:#6d9ebe33 ;"></div>
+         <div class="filter" style="background-color:#ebbf792f ;"></div>
+         <div class="filter" style="background-color:#96838425 ;"></div>
+         <div class="filter" style="background-color:#e4b9cd48;"></div>
+         <div class="filter" style="background-color:#f08c8c1e ;"></div>   
+    </div>
+
+    <div class="zoom-in-out-container">
+        <div class="zoom-in">+</div> 
+        <div class="zoom-out">-</div>
+    </div>
+    
+    <!-- <button id="gallery"><i class="fa fa-file-image-o" aria-hidden="true"></i></button> -->
+
+   <button id="gallery" class="gal"><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+
+    <script src="dbscript.js"></script> 
+    <script src="script.js">  </script>   
+</body>
+</html>

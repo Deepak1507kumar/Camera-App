@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+#record, #capture {
+    position: fixed;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: black;
+    z-index: 2;
+}
+
+#record{
+    top: 40vh;
+}
+
+#capture{
+    top: 50vh;
+}
+
+#record div, #capture div{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#record div{
+    background: red;
+}
+
+#capture div {
+    background: white;
+}
+
+.capture-animation{ 
+      animation: inOut .5s ;
+}
+
+.record-animation{ 
+    animation: inOut 1s infinite;
+}
+
+
+@keyframes inOut{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.container-filter{
+    height: 25rem;
+    width: 5rem;   
+    position: fixed;
+    left: 2rem;
+    top: calc((100vh - 25rem)/2);
+    background-color: crimson;
+    z-index: 2;
+}
+
+.filter{
+    border: 2px solid white;
+    width: 100%;
+    height: calc(25rem/6);
+    background: url(images/img1.jpg); 
+    background-size: cover;   
+    background-blend-mode: soft-light;
+
+}
+
+.zoom-in-out-container{
+    position: fixed;
+    height: 8rem;
+    width: 4rem;
+    right: 2rem;
+    top: 8rem;
+    z-index: 2;
+}
+ .zoom-in-out-container div{
+     /* border: 5px solid white; */
+     width: 100%;
+     height: 50%;
+     color: white;
+     font-size: 3.5rem;
+     font-weight: bold;
+     text-align: center;
+     background-color:#34495e8f;
+ }
+
+.filter-div{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+#gallery{
+    position: fixed;
+    right: 2rem;
+    bottom : 5rem;
+    font-size: 31px;
+    z-index: 3;   
+    height: 3.5rem;
+    width: 3.5;
+    text-align: center; 
+    background-color:#c9b9b68f;
+     
+} 
+
+ 

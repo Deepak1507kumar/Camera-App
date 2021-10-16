@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas </title>
+
+  <style>
+      *{
+          box-sizing: border-box;
+      }
+      body{
+          margin: 0;
+          overflow: hidden;
+           
+      }
+  </style>
+</head>
+<body>
+     
+    
+    <canvas>
+
+    </canvas>
+<script>
+    let canvas = document.querySelector("canvas");
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth ;
+
+
+    let img = document.createElement("img");
+    img.src = "images/sea.jpg";
+
+    let ctx = canvas.getContext("2d");
+
+    img.addEventListener("load" , function(){
+        ctx.drawImage(img,0,0);
+    })
+
+    ctx.beginPath();
+    ctx.moveTo(145,75);
+    ctx.lineTo(250,150);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+
+   // ctx.beginPath();
+   ctx.strokeRect(100,200 , 300, 400);
+   //ctx.fillStyle = "red"
+  // ctx.fillRect(100,200,300 ,400);
+   
+</script>
+
+
+</body>
+</html>

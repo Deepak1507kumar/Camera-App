@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .box1{
+            margin: auto;
+            margin-top: calc((100vh - 15rem)/2);
+            height: 15rem;
+            width: 15rem;
+            background-color:red;
+            animation: box1 2s infinite;
+            /* animation-fill-mode: forwards; */
+        }
+
+        .box2 ,.box3{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            position: fixed;
+            background-color:yellow;
+            top :50%;
+            left: 50%;
+            opacity: 0.6;
+            animation: box2 1s infinite;
+            transform: translate(-50% , -50%);
+         
+        }
+
+        .box3{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            position: fixed;
+            background-color: green;
+            top :50%;
+            left: 50%;
+            opacity: 0.8;
+            animation: box3 0.5s infinite;
+            transform: translate(-50% , -50%);
+         
+        }
+
+        @keyframes box1 {
+            0%{
+                 transform:   scale(1);
+                 border-radius: 0%;
+            }
+            50%{
+                transform: scale(1.5);
+                border-radius: 50%;
+            } 
+            100%{
+                transform: scale(1);
+                border-radius: 0%;
+            }
+            
+        }
+
+        @keyframes box2 {
+            0%{
+               opacity: 1;
+                
+            }
+            50%{
+               opacity: 0;
+                
+            }
+            100%{
+               opacity: 1;
+                
+            }
+             
+            
+        }
+
+        @keyframes box3 {
+            0%{
+               opacity: 1;
+                
+            }   
+        }
+
+
+
+    </style>
+</head>
+<body>
+     <div class="box1"></div>
+     <div class="box2"></div>
+     <div class="box3"></div>
+</body>
+</html>
